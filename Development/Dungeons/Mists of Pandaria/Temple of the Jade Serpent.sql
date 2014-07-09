@@ -1,5 +1,3 @@
-"patch" SmartAI Lab Information
-
 /* Copyright (C) 11 April 2011-2014 patch Project 
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -19,7 +17,5 @@
  * under certain conditions.
  */
  
- It's SmartAI project, original written for Skyfire Core. 
-Scripting ONLY creatures SPELLS,EMOTES,TEXTS !!!
-All scripts for Mists of Pandaria 5.x.x (xxxxx) content Client 
-anyway this can help you enjoy this game with perfect scripted monsters in the world
+  /* Dungeon Normal & Heroic for 5 people */
+ /* Trash Mobs */

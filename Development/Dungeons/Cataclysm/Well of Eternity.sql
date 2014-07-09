@@ -25,81 +25,81 @@ SET @ENTRY := 55510;
 UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
 DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
 INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
-(@ENTRY,0,0,0,0,0,100,6,5000,7000,18000,26000,11,103992,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Abyssal Flames');
+(@ENTRY,0,0,0,0,0,100,12,5000,7000,18000,26000,11,103992,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Abyssal Flames');
 
 -- Corrupted Arcanist
 SET @ENTRY := 55654;
 UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
 DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
 INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
-(@ENTRY,0,0,0,0,0,100,6,0,0,3400,4700,11,107865,64,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Arcane Annihilation'),
-(@ENTRY,0,1,0,3,0,100,7,0,30,0,0,11,107880,1,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Infinite Mana at 30% HP');
+(@ENTRY,0,0,0,0,0,100,12,0,0,3400,4700,11,107865,64,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Arcane Annihilation'),
+(@ENTRY,0,1,0,3,0,100,13,0,30,0,0,11,107880,1,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Infinite Mana at 30% HP');
 
 -- Dreadlord Debilitator
 SET @ENTRY := 55765;
 UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
 DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
 INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
-(@ENTRY,0,0,0,0,0,100,6,6000,9000,22000,26000,11,104678,0,0,0,0,0,5,0,0,0,0,0,0,0,'Cast Debilitating Flay');
+(@ENTRY,0,0,0,0,0,100,12,6000,9000,22000,26000,11,104678,0,0,0,0,0,5,0,0,0,0,0,0,0,'Cast Debilitating Flay');
 
 -- Dreadlord Defender
 SET @ENTRY := 55656;
 UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
 DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
 INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
-(@ENTRY,0,0,0,0,0,100,6,5000,7500,15000,22500,11,107840,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Carrion Swarm'),
-(@ENTRY,0,1,0,14,0,100,7,4000,40,0,0,11,107900,0,0,0,0,0,11,55654,40,0,0,0,0,0,'Cast Demonic Warding on Corrupted Arcanist');
+(@ENTRY,0,0,0,0,0,100,12,5000,7500,15000,22500,11,107840,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Carrion Swarm'),
+(@ENTRY,0,1,0,14,0,100,13,4000,40,0,0,11,107900,0,0,0,0,0,11,55654,40,0,0,0,0,0,'Cast Demonic Warding on Corrupted Arcanist');
 
 -- Enchanted Highmistress <The Queen's Royal Guard>
 SET @ENTRY := 56579;
 UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
 DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
 INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
-(@ENTRY,0,0,0,0,0,100,6,0,0,3400,4700,11,102265,64,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Fireball'),
-(@ENTRY,0,1,0,9,0,100,6,0,10,14500,15500,11,102263,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Firebomb on Close');
+(@ENTRY,0,0,0,0,0,100,12,0,0,3400,4700,11,102265,64,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Fireball'),
+(@ENTRY,0,1,0,9,0,100,12,0,10,14500,15500,11,102263,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Firebomb on Close');
 
 -- Enchanted Highmistress <The Queen's Royal Guard>
 SET @ENTRY := 54589;
 UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
 DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
 INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
-(@ENTRY,0,0,0,0,0,100,6,0,0,3400,4700,11,102266,64,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Frostbolt'),
-(@ENTRY,0,1,0,0,0,100,6,5000,9000,18000,25000,11,102267,1,0,0,0,0,4,0,0,0,0,0,0,0,'Cast Blizzard');
+(@ENTRY,0,0,0,0,0,100,12,0,0,3400,4700,11,102266,64,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Frostbolt'),
+(@ENTRY,0,1,0,0,0,100,12,5000,9000,18000,25000,11,102267,1,0,0,0,0,4,0,0,0,0,0,0,0,'Cast Blizzard');
 
 -- Eternal Champion <The Queen's Royal Guard>
 SET @ENTRY := 54612;
 UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
 DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
 INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
-(@ENTRY,0,0,0,0,0,100,6,2000,4500,12000,14500,11,102260,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Queen\'s Blade'),
-(@ENTRY,0,1,0,0,0,100,6,7000,9000,16000,18500,11,102257,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Shimmering Strike');
+(@ENTRY,0,0,0,0,0,100,12,2000,4500,12000,14500,11,102260,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Queen\'s Blade'),
+(@ENTRY,0,1,0,0,0,100,12,7000,9000,16000,18500,11,102257,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Shimmering Strike');
 
 -- Eye of the Legion
 SET @ENTRY := 54747;
 UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
 DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
 INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
-(@ENTRY,0,0,0,0,0,100,6,5000,6000,10000,15000,11,102356,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Fel Flames');
+(@ENTRY,0,0,0,0,0,100,12,5000,6000,10000,15000,11,102356,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Fel Flames');
 
 -- Guardian Demon
 SET @ENTRY := 54927;
 UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
 DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
 INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
-(@ENTRY,0,0,0,0,0,100,6,7000,7000,15000,16000,11,102561,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Demon Grip');
+(@ENTRY,0,0,0,0,0,100,12,7000,7000,15000,16000,11,102561,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Demon Grip');
 
 -- Royal Handmaiden
 SET @ENTRY := 54645;
 UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
 DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
 INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
-(@ENTRY,0,0,0,0,0,100,6,7500,8500,14500,15500,11,102233,0,0,0,0,0,5,0,0,0,0,0,0,0,'Cast Choking Perfume'),
-(@ENTRY,0,1,0,11,0,100,7,0,0,0,0,11,102238,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Piercing Thorns on Spawn'),
-(@ENTRY,0,2,0,0,0,100,6,2000,3000,12000,12000,11,102245,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Sweet Lullaby');
+(@ENTRY,0,0,0,0,0,100,12,7500,8500,14500,15500,11,102233,0,0,0,0,0,5,0,0,0,0,0,0,0,'Cast Choking Perfume'),
+(@ENTRY,0,1,0,11,0,100,13,0,0,0,0,11,102238,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Piercing Thorns on Spawn'),
+(@ENTRY,0,2,0,0,0,100,12,2000,3000,12000,12000,11,102245,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Sweet Lullaby');
 
 -- Shadowbat
 SET @ENTRY := 55453;
 UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
 DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
 INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
-(@ENTRY,0,0,0,0,0,100,6,12000,15000,29000,35000,11,103763,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Displacement');
+(@ENTRY,0,0,0,0,0,100,12,12000,15000,29000,35000,11,103763,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Displacement');
